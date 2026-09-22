@@ -155,7 +155,7 @@
     gap: var(--space-1);
     align-items: center;
     font-family: var(--font-sans);
-    font-size: 18px;
+    font-size: 19px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
   }
@@ -166,7 +166,8 @@
   .hero__title {
     font-size: clamp(40px, 5vw, 72px);
     font-weight: 500;
-    line-height: 1.0;
+    line-height: 0.9;
+    letter-spacing: 0.5rm;
     width: fit-content;
   }
 
@@ -188,7 +189,7 @@
     background-size: cover;
     background-position: left;
     background-image: url(../images/homepage_img.jpg);
-    opacity: 0.6;
+    opacity: 0.5;
     height: 600px;
     width: 100%;
     
