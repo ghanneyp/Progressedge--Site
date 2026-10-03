@@ -6,36 +6,215 @@
 <title>Programmes — ProgressEdge</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&family=Caveat:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
   <header class="nav">
-    <a href="../index.html" class="nav__logo" style="text-decoration:none;color:inherit;">ProgressEdge</a>
-   <ul class="nav__links" id="navLinks">
-      <li><a href="pages/journeys.html"><svg class="nav__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M2 21l21-9L2 3v7l15 2-15 2z"/></svg>Journeys</a></li>
-      <li><a href="pages/the-method.html"><svg class="nav__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>The Method</a></li>
-      <li><a href="pages/expertise.html"><svg class="nav__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 000 20V2z"/><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>Expertise</a></li>
-      <li><a href="pages/programmes.html"><svg class="nav__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 12l10 5 10-5M2 17l10 5 10-5"/></svg>Programmes</a></li>
-      <li><a href="pages/insights.html"><svg class="nav__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M9 21h6v-1H9v1zm3-19a7 7 0 00-4 12.7V17h8v-2.3A7 7 0 0012 2z"/></svg>Insights</a></li>
-      <li><a href="pages/about.html"><svg class="nav__icon" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/><rect x="11" y="10" width="2" height="7" fill="var(--color-bg)"/><rect x="11" y="6.5" width="2" height="2" fill="var(--color-bg)"/></svg>About</a></li>
-    </ul>
-    <div class="nav__right">
-      <a href="#">Client Login</a>
-      <button class="btn">Start a conversation</button>
-    </div>
-  </header>
+  <a href="../index.html" class="nav__logo">ProgressEdge®</a>
+  <ul class="nav__links" id="navLinks">
+    <li><a href="journeys.html"><svg class="nav__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M2 21l21-9L2 3v7l15 2-15 2z"/></svg>Journeys</a></li>
+    <li><a href="the-method.html"><svg class="nav__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>The Method</a></li>
+    <li><a href="expertise.html"><svg class="nav__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 000 20V2z"/><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>Expertise</a></li>
+    <li><a href="programmes.html"><svg class="nav__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 12l10 5 10-5M2 17l10 5 10-5"/></svg>Programmes</a></li>
+    <li><a href="insights.html"><svg class="nav__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M9 21h6v-1H9v1zm3-19a7 7 0 00-4 12.7V17h8v-2.3A7 7 0 0012 2z"/></svg>Insights</a></li>
+    <li><a href="about.html"><svg class="nav__icon" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/><rect x="11" y="10" width="2" height="7" fill="var(--color-bg)"/><rect x="11" y="6.5" width="2" height="2" fill="var(--color-bg)"/></svg>About</a></li>
+  </ul>
+  <div class="nav__right">
+    <a href="#" class="nav__login" id="clientLoginLink">
+      <svg class="nav__icon" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+      <span class="nav__login-text">Client Login</span>
+    </a>
+    <button class="btn btn--primary" data-open-modal>Start a conversation <span class="btn__arrow">→</span></button>
+    <button class="nav__hamburger" id="navHamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
 
-  <section class="journey">
-    <div class="journey__header">
-      <div>
-        <div class="journey__eyebrow">PE • PROGRAMMES</div>
-        <h1 class="journey__title">Our programmes</h1>
-        <p class="journey__subtitle">Structured plans tailored to every stage of the journey.</p>
+
+  <section class="page-header">
+    <div>
+      <div class="page-header__eyebrow">PE · 03 · PROGRAMMES</div>
+      <h1 class="page-header__title">Programmes for real futures.</h1>
+      <p class="page-header__sub">Structured, flexible programmes designed around your goals. Whether you're exploring, preparing or transitioning, we'll help you take the next step with <br> clarity and confidence.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;">
+    <div class="grid-3">
+      <div class="card">
+        <div class="card__image" style="background-image:url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=600');"></div>
+        <div class="card__body">
+          <span class="card__num">01</span>
+          <div class="card__title">ProgressEdge Foundations</div>
+          <span class="card__stage">Ages 8–13</span>
+          <p class="card__desc">A light-touch programme of guided exploration — interest discovery, strengths assessment and early goal-setting, with termly check-ins.</p>
+          <a href="programmes.html" class="card__link">Learn more →</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__image" style="background-image:url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=600');"></div>
+        <div class="card__body">
+          <span class="card__num">02</span>
+          <div class="card__title">University Pathways</div>
+          <span class="card__stage">Ages 14–18</span>
+          <p class="card__desc">End-to-end support through subject choices, extracurricular strategy, personal statements and the full application cycle.</p>
+          <a href="programmes.html" class="card__link">Learn more →</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__image" style="background-image:url('https://freemannews.tulane.edu/sites/default/files/styles/fmbs_content_3by2/public/2025-01/business_education_options_what_graduate_degree_should_i_get_800x534.jpg?h=c9f93661&itok=8XGe5YyI');"></div>
+        <div class="card__body">
+          <span class="card__num">03</span>
+          <div class="card__title">Graduate Advantage</div>
+          <span class="card__stage">Ages 18–25</span>
+          <p class="card__desc">CV and interview preparation, industry mentorship, and support exploring graduate schemes and postgraduate study.</p>
+          <a href="programmes.html" class="card__link">Learn more →</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__image" style="background-image:url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=600');"></div>
+        <div class="card__body">
+          <div class="card__title">Career Clarity</div>
+          <span class="card__stage">Professionals</span>
+          <p class="card__desc">One-on-one coaching for professionals planning a career change, international move, or return to study.</p>
+          <a href="programmes.html" class="card__link">Learn more →</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__image" style="background-image:url('https://intarelscholars.com/wp-content/uploads/2026/07/kN6eHlzYjzL-1080x675.webp');"></div>
+        <div class="card__body">
+          <div class="card__title">Global Opportunities</div>
+          <span class="card__stage">International students</span>
+          <p class="card__desc">Specialist guidance for students and families navigating education and career moves across borders.</p>
+          <a href="programmes.html" class="card__link">Learn more →</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__image" style="background-image:url('https://imageio.forbes.com/specials-images/imageserve/66959858a5a564cdae7b34e8/0x0.jpg?format=jpg&height=600&width=1200&fit=bounds');"></div>
+        <div class="card__body">
+          <div class="card__title">Family Support</div>
+          <span class="card__stage">Parents & guardians</span>
+          <p class="card__desc">Resources and coaching to help parents support their children's decisions without adding pressure.</p>
+          <a href="programmes.html" class="card__link">Learn more →</a>
+        </div>
       </div>
     </div>
   </section>
 
+  <section class="section">
+    <div class="card" style="display:grid; grid-template-columns: 1fr 1fr;">
+      <div style="padding: var(--space-4); display:flex; flex-direction:column; gap: var(--space-2); justify-content:center;">
+        <div class="card__title" style="font-size:24px;">ProgressEdge Futures Lab</div>
+        <p class="card__desc">Immersive programmes for ambitious students. Real-world challenges, expert mentors, lasting networks.</p>
+        <a href="#" class="card__link" data-open-modal style="cursor:pointer;">Explore our summer programmes →</a>
+      </div>
+      <div class="card__image" style="background-image:url('https://ex3labs.com/wp-content/uploads/2023/10/EX3-Labs-UMA-Cam-2-Day-1-29-of-281-scaled-e1698092820790.jpg'); aspect-ratio:auto;"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="footer__logo">ProgressEdge®</div>
+        <p class="footer__tagline">Guidance for what's next.</p>
+        <div class="footer__newsletter">
+          <input type="email" placeholder="Your email">
+          <button class="btn btn--primary" type="button">Join →</button>
+        </div>
+      </div>
+      <div class="footer__cols">
+        <div class="footer__col">
+          <h4>Journeys</h4>
+          <ul>
+            <li><a href="../pages/journeys.html">Early → Foundations</a></li>
+            <li><a href="../pages/journeys.html">School → University</a></li>
+            <li><a href="../pages/journeys.html">University → Career</a></li>
+            <li><a href="../pages/journeys.html">Career → Next Move</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Programmes</h4>
+          <ul>
+            <li><a href="../pages/programmes.html">Foundations</a></li>
+            <li><a href="../pages/programmes.html">University Pathway</a></li>
+            <li><a href="../pages/programmes.html">Career Launch</a></li>
+            <li><a href="../pages/programmes.html">Futures Lab</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="../pages/about.html">Our Story</a></li>
+            <li><a href="../pages/expertise.html">Expertise</a></li>
+            <li><a href="../pages/insights.html">Insights</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 ProgressEdge. All rights reserved.</span>
+      <div class="footer__social">
+        <a href="#">LinkedIn</a>
+        <a href="#">Instagram</a>
+        <a href="#">YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- START A CONVERSATION MODAL -->
+  <div class="modal-overlay" id="conversationModal">
+    <div class="modal">
+      <button class="modal__close" data-close-modal aria-label="Close">✕</button>
+      <div class="modal__visual" style="background-image:url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1200');">
+        <span class="modal__visual-top">Let's talk</span>
+        <span class="modal__visual-caption">Ideas today.<br>Impact tomorrow.</span>
+      </div>
+      <form class="modal__form" id="enquiryForm">
+        <h3>Start a conversation.</h3>
+        <p class="form-note">A no-obligation consultation to understand your goals and explore how we can support you.</p>
+        <div class="form-field">
+          <label for="enq-topic">I'm getting in touch about</label>
+          <select id="enq-topic">
+            <option>Please select an option</option>
+            <option>University admissions support</option>
+            <option>Career guidance and planning</option>
+            <option>Postgraduate study (Master's / PhD)</option>
+            <option>School and subject selection</option>
+            <option>Our programmes</option>
+            <option>General enquiry</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="enq-first">First name *</label>
+            <input id="enq-first" type="text" required placeholder="Your first name">
+          </div>
+          <div class="form-field">
+            <label for="enq-last">Last name *</label>
+            <input id="enq-last" type="text" required placeholder="Your last name">
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="enq-email">Email address *</label>
+          <input id="enq-email" type="email" required placeholder="you@example.com">
+        </div>
+        <div class="form-field">
+          <label for="enq-msg">Tell us a little more</label>
+          <textarea id="enq-msg" rows="3" placeholder="What would you like to discuss?"></textarea>
+        </div>
+        <label class="form-checkbox">
+          <input type="checkbox" required>
+          I agree to be contacted by the ProgressEdge team about my enquiry.
+        </label>
+        <button class="btn btn--primary" type="submit">Submit enquiry <span class="btn__arrow">→</span></button>
+        <p class="form-note">We aim to respond within 1–2 working days.</p>
+      </form>
+    </div>
+  </div>
+
+
+  <script src="../js/main.js"></script>
 </body>
 </html>
