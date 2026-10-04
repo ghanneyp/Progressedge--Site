@@ -91,7 +91,6 @@
     </div>
   </section>
 
-    <!-- FOOTER -->
   <footer class="footer">
     <div class="footer__top">
       <div class="footer__brand">
@@ -142,57 +141,59 @@
     </div>
   </footer>
 
-  <!-- START A CONVERSATION MODAL -->
   <div class="modal-overlay" id="conversationModal">
-    <div class="modal">
-      <button class="modal__close" data-close-modal aria-label="Close">✕</button>
-      <div class="modal__visual" style="background-image:url('https://media.istockphoto.com/id/1168160254/photo/two-african-women-planning-out-details-of-business-projects.jpg?s=612x612&w=0&k=20&c=k6GMNGbrpOxUVW4L8OAExFKYVuhH2d-dCwp8hdeX3VY=');">
-        <span class="modal__visual-top">Let's talk</span>
+  <div class="modal">
+    <button class="modal__close" data-close-modal aria-label="Close">✕</button>
+
+    <div class="modal__intro">
+      <span class="modal__visual-top">Let's talk</span>
+      <h3>Start a conversation.</h3>
+      <p class="form-note">A no-obligation consultation to understand your goals and explore how we can support you.</p>
+      <div class="modal__visual" style="background-image:url('https://media.istockphoto.com/id/1482289740/photo/how-to-increase-your-chances-of-landing-a-job-offer.webp?s=1024x1024&w=is&k=20&c=6_92m9Fmp54HNICwtsalHjtBqwK4lzdVx7VDLwbVcrQ=');">
         <span class="modal__visual-caption">Ideas today.<br>Impact tomorrow.</span>
       </div>
-      <form class="modal__form" id="enquiryForm">
-        <h3>Start a conversation.</h3>
-        <p class="form-note">A no-obligation consultation to understand your goals and explore how we can support you.</p>
-        <div class="form-field">
-          <label for="enq-topic">I'm getting in touch about</label>
-          <select id="enq-topic">
-            <option>Please select an option</option>
-            <option>University admissions support</option>
-            <option>Career guidance and planning</option>
-            <option>Postgraduate study (Master's / PhD)</option>
-            <option>School and subject selection</option>
-            <option>Our programmes</option>
-            <option>General enquiry</option>
-          </select>
-        </div>
-        <div class="form-row">
-          <div class="form-field">
-            <label for="enq-first">First name *</label>
-            <input id="enq-first" type="text" required placeholder="Your first name">
-          </div>
-          <div class="form-field">
-            <label for="enq-last">Last name *</label>
-            <input id="enq-last" type="text" required placeholder="Your last name">
-          </div>
-        </div>
-        <div class="form-field">
-          <label for="enq-email">Email address *</label>
-          <input id="enq-email" type="email" required placeholder="you@example.com">
-        </div>
-        <div class="form-field">
-          <label for="enq-msg">Tell us a little more</label>
-          <textarea id="enq-msg" rows="3" placeholder="What would you like to discuss?"></textarea>
-        </div>
-        <label class="form-checkbox">
-          <input type="checkbox" required>
-          I agree to be contacted by the ProgressEdge team about my enquiry.
-        </label>
-        <button class="btn btn--primary" type="submit">Submit enquiry <span class="btn__arrow">→</span></button>
-        <p class="form-note">We aim to respond within 1–2 working days.</p>
-      </form>
     </div>
-  </div>
 
+    <form class="modal__form" id="enquiryForm">
+      <div class="form-field">
+        <label for="enq-topic">I'm getting in touch about</label>
+        <select id="enq-topic">
+          <option>Please select an option</option>
+          <option>University admissions support</option>
+          <option>Career guidance and planning</option>
+          <option>Postgraduate study (Master's / PhD)</option>
+          <option>School and subject selection</option>
+          <option>Our programmes</option>
+          <option>General enquiry</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <div class="form-field">
+          <label for="enq-first">First name *</label>
+          <input id="enq-first" type="text" required placeholder="Your first name">
+        </div>
+        <div class="form-field">
+          <label for="enq-last">Last name *</label>
+          <input id="enq-last" type="text" required placeholder="Your last name">
+        </div>
+      </div>
+      <div class="form-field">
+        <label for="enq-email">Email address *</label>
+        <input id="enq-email" type="email" required placeholder="you@example.com">
+      </div>
+      <div class="form-field">
+        <label for="enq-msg">Tell us a little more</label>
+        <textarea id="enq-msg" rows="3" placeholder="What would you like to discuss?"></textarea>
+      </div>
+      <label class="form-checkbox">
+        <input type="checkbox" required>
+        I agree to be contacted by the ProgressEdge team about my enquiry.
+      </label>
+      <button class="btn btn--primary" type="submit">Submit enquiry <span class="btn__arrow">→</span></button>
+      <p class="form-note">We aim to respond within 1–2 working days.</p>
+    </form>
+  </div>
+</div>
 
   <script src="../js/main.js"></script>
 </body>
